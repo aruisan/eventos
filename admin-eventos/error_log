@@ -1,0 +1,1 @@
+[11-Apr-2017 14:50:36 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/eventosg/public_html/admin-eventos/index.php:2) in /home/eventosg/public_html/admin-eventos/index.php on line 5

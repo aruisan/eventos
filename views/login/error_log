@@ -1,0 +1,2 @@
+[12-Apr-2017 16:00:54 UTC] PHP Fatal error:  Call to undefined function base_url() in /home/eventosg/public_html/views/login/registrar_view.php on line 5
+[12-Apr-2017 17:03:24 UTC] PHP Fatal error:  Call to undefined function base_url() in /home/eventosg/public_html/views/login/registrar_view.php on line 5
