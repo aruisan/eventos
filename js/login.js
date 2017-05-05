@@ -7,7 +7,7 @@ $(document).ready(function(){
 
 $("#enviar").on("click", function(e)
 {
-    e.defaultPrevented();
+    e.preventDefault();
     validarFormularios();       
 });
 

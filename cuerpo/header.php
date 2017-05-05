@@ -322,12 +322,13 @@
             
 
              <?php if($_SESSION['correo']){ ?>
-
-
-              <button class="dropdown btn btn-default bienvenido">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+<!---->
+                  
+<!---->
+              <span class="dropdown desaparecer">
+                <button class="dropdown-toggle btn btn-default " data-toggle="dropdown">
                   Bienvenido<b class="caret"></b>
-                </a>
+                </button>
                 <ul class="dropdown-menu text-left">
                   <li class="dropdown-header alert-warning text-center"><?= $_SESSION['correo']; ?></li>
                   <li class="divider"></li>
@@ -340,19 +341,19 @@
                       </a>
                   </li>
                   
+                </ul>
+              </span>
+                <?php }else{ ?>
+                  <button class="btn btn-success login hidden-sm hidden-md hidden-lg">
+                    <img src="<?= $link; ?>imagenes/social/login.png">
+                  </button>
+                   <button class="btn btn-success login hidden-xs">
+                    <img src="<?= $link; ?>imagenes/social/login.png">Usuario
+                  </button>
+                  <?php } ?>
+                </div>
+              </li>
             </ul>
-          </button>
-          <?php }else{ ?>
-            <button class="btn btn-success login hidden-sm hidden-md hidden-lg">
-              <img src="<?= $link; ?>imagenes/social/login.png">
-            </button>
-             <button class="btn btn-success login hidden-xs">
-              <img src="<?= $link; ?>imagenes/social/login.png">Usuario
-            </button>
-            <?php } ?>
-          </div>
-        </li>
-      </ul>
  
       <form class="navbar-form navbar-right hidden-sm" role="search">
         <div class="form-group">

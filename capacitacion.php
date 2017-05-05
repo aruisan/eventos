@@ -50,7 +50,7 @@ $user = $_SESSION['id'];
 			<h4 class="text-center text-primary"><?= $datos->titulo;?></h4>
 			<span id="respuesta<?= $datos->id_evento; ?>" class="text-warning">Fecha limite para Inscribirse: <?= $datos->ff_inicio; ?>
 			<?php if($Confirmar->num_rows > 0){ echo  '<b class="text-danger pull-right ">Ya estas Inscrito</b>'; 
-				}else if (($_SESSION['correo'] ==  "" )) {echo '<a href="'. $link.'views/login/login_view.php" class="btn btn-link pull-right "><b class="text-primary">INSCRIBIRME</b></a>';
+				}else if (($_SESSION['correo'] ==  "" )) {echo '<a href="'. $link.'views/login/registrar_view.php" class="btn btn-link pull-right "><b class="text-primary">INSCRIBIRME</b></a>';
 				}else{echo '<form id="form-suscribirse'.$datos->id_evento.'"><input type="hidden" name="user" value="'.$_SESSION['id'].'"><input type="hidden" name="accion" value="guardar"><input type="hidden" name="evento" value="'.$di.'"><input type="hidden" name="evento" value="'.$datos->id_evento.'"><button class="btn btn-link pull-right inscribirme" id="'.$datos->id_evento.'"><b class="text-success">INSCRIBIRME</b></button></form>';
 			} ?></span>
 			<table class="table table-bordered table-hover table-condensed table-striped">
@@ -96,7 +96,7 @@ $user = $_SESSION['id'];
 <script type="text/javascript" src="<?= $link; ?>js/slider.js"></script>
 <script type="text/javascript">
 	$('.inscribirme').click(function(e){
-		 e.defaultPrevented();
+		 e.preventDefault();
 		var id = $(this).attr("id");
 		var datos = $("#form-suscribirse"+id).serialize();
 		var url = "php/inscribirse.php"
