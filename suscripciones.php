@@ -3,8 +3,9 @@
 $link ="";
 require_once($link.'cp/conexion.php'); 
 
+$di = $_SESSION['id'];
 
-$sql="SELECT * FROM evento WHERE id_actividad < 67 AND activo = 1";
+$sql="SELECT evento.titulo FROM evento,conteo_evento WHERE conteo_evento.id_usuario = $di AND evento.id_evento = conteo_evento.id_evento";
 $consulta = $conexion->query($sql);
 
 ?>
@@ -36,7 +37,7 @@ $consulta = $conexion->query($sql);
 	</div>
 	<div class="row cuerpo">
 		<div class="col-xs-12 col-sm-8 col-md-8">
-			<?php include_once($link.'cuerpo/section.php'); ?>
+			<?php include_once($link.'cuerpo/suscripcion.php'); ?>
 		</div>
 		<div class="hidden-xs col-sm-4 col-md-4">
 			<?php include_once($link.'cuerpo/aside.php'); ?>

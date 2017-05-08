@@ -1,2 +1,0 @@
-[11-Apr-2017 16:50:54 UTC] PHP Fatal error:  Call to a member function fetch_object() on boolean in /home/eventosg/public_html/php/verArticulo.php on line 11
-[11-Apr-2017 16:50:58 UTC] PHP Fatal error:  Call to a member function fetch_object() on boolean in /home/eventosg/public_html/php/verArticulo.php on line 11

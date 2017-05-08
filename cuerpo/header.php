@@ -332,8 +332,8 @@
                 <ul class="dropdown-menu text-left">
                   <li class="dropdown-header alert-warning text-center"><?= $_SESSION['correo']; ?></li>
                   <li class="divider"></li>
-                  <li><a href="#"><span class="glyphicon glyphicon-user"></span> Editar perfil</a></li>
-                  <li><a href="#"><span class="glyphicon glyphicon-list-alt"></span> Suscripciones</a></li>
+                  <li><a href="editarPerfil.php"><span class="glyphicon glyphicon-user"></span> Editar perfil</a></li>
+                  <li><a href="suscripciones.php"><span class="glyphicon glyphicon-list-alt"></span> Suscripciones</a></li>
                   <li class="divider"></li>
                   <li class="alert-danger text-center">
                       <a href="views/login/php/cerrarSesion.php">
