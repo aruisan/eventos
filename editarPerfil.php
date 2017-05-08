@@ -1,6 +1,6 @@
 <?php
 $link = "";
-require_once($link.'/cp/conexion.php');
+require_once('cp/conexion.php');
 
 $usuario = $_SESSION['id'];
 $sql="SELECT * FROM usuario WHERE id_usuario = $usuario";
@@ -25,7 +25,6 @@ $datos = $consulta->fetch_object();
 
 <link rel="stylesheet" type="text/css" href="<?= $link; ?>css/normalize.css">
 <link rel="stylesheet" type="text/css" href="<?= $link; ?>css/slider.css">
-<link rel="stylesheet" type="text/css" href="<?= $link; ?>css/login.css">
 </head>
 <body>
 <div class="fondo"> 

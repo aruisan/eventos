@@ -66,7 +66,9 @@
                                         </div>
                                 </div> 
                                 <div class="row">
+				  <div class="pull-center">
                                     <button class="btn btn-danger" id="cancelar-editar-perfil">Cancelar</button>
                                     <button class="btn btn-success pull-center" id="enviar">Editar</button>
+				   </div>
                                 </div>                    
                         </form>
